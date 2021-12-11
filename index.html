@@ -1,0 +1,595 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap &#8226; The world's most popular mobile-first and responsive front-end framework</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+      /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol,
+ul {
+  list-style: none
+}
+
+blockquote,
+q {
+  quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+
+/* MAIN STRUCTURE */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 12px;
+  min-width: 975px;
+}
+
+header {
+  padding-bottom: 40px;
+}
+
+main {
+  position: relative;
+  display: block;
+}
+
+footer {
+  margin-top: 0 auto 30px;
+  border-top: 0;
+  text-align: left;
+  padding: 50px 0 50px 40px;
+  color: #99979c;
+  background-color: #2A2730;
+  display: block;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* BOOTSTRAP 4 ANNOUNCEMENT */
+
+div.b4_teaser {
+  position: relative;
+  text-align: center;
+  background-color: #0275D8;
+}
+
+div.b4_teaser a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+div.b4_teaser a:hover {
+  background-color: #0269C2;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+  position: relative;
+  display: block;
+  padding: 0 25px;
+  width: 100%;
+}
+
+.navbar li {
+  line-height: 40px;
+  height: 40px;
+}
+
+.navbar li a {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #563D7C;
+  padding: 0 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar li a.navbar_brand {
+  font-size: 18px;
+}
+
+.navbar li a:hover {
+  background-color: #EEEEEE;
+}
+
+.left_nav {
+  float: left;
+  position: relative;
+  left: 20px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.left_nav li {
+  float: left;
+}
+
+.right_nav {
+  float: right;
+  position: relative;
+  right: 60px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.right_nav li {
+  float: left;
+}
+
+
+/* BOOTSTRAP DOWNLOAD */
+
+section#bootstrap_download {
+  position: relative;
+  padding: 80px 0;
+  background-color: #563D7C;
+}
+
+article.bs_header {
+  padding: 15px;
+  margin: 35px;
+  text-align: center;
+}
+
+span.logo {
+  margin: 0 auto 30px;
+  width: 144px;
+  height: 144px;
+  border: 1px solid;
+  text-align: center;
+  font-size: 108px;
+  line-height: 140px;
+  display: block;
+  font-weight: 600;
+  border-radius: 15%;
+  color: white;
+}
+
+.bs_description {
+  font-size: 24px;
+  color: white;
+  margin: 0 auto 30px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.bs_button {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  border: 1px solid;
+  padding: 15px 30px;
+  border-radius: 6px;
+  margin: 0 auto 30px;
+  vertical-align: middle;
+  width: auto;
+}
+
+.bs_button:hover {
+  background-color: white;
+  color: #563D7C;
+}
+
+p.version {
+  margin: -15px 0 30px 0;
+  color: #9783B9;
+  font-size: 14px;
+}
+
+
+/*BOOTSTRAP FEATURES*/
+
+#bootstrap_features {
+  padding: 15px 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+}
+
+.section_h2 {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.section_p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #555;
+}
+
+#features_articles {
+  position: relative;
+  display: block;
+}
+
+#features_articles > article {
+  display: inline-block;
+  width: 32%;
+  height: auto;
+}
+
+#features_articles > article > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#features_articles > article > h3 {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+
+.lead {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.bs_button_inverse {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #563D7C;
+  border: 1px solid;
+  padding: 15px 30px;
+  border-radius: 6px;
+  margin: 0 auto 30px;
+  vertical-align: middle;
+  width: auto;
+}
+
+.bs_button_inverse:hover {
+  background-color: #563D7C;
+  color: white;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #EEEEEE;
+}
+
+.half_rule {
+  width: 100px;
+  margin: 40px auto;
+}
+
+
+/* BOOTSTRAP EXPO */
+
+#bootstrap_expo {
+  padding: 29.5px 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+  text-align: center;
+}
+
+#expo_images {
+  display: block;
+  position: relative;
+}
+
+.expo_thumb {
+  width: 24%;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+/* FOOTER */
+
+.footer_link {
+  color: white;
+}
+
+.footer_nav {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer_nav li {
+  display: inline-block;
+  padding-right: 20px;
+  font-weight: 500;
+}
+
+footer > p {
+  line-height: 1.5;
+}
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="b4_teaser">
+      <a href="#">Aww yeah, Bootstrap 4 is coming!</a>
+    </div>
+    <nav class="navbar">
+      <ul class="left_nav">
+        <li>
+          <a class="navbar_brand" href="#">Bootstrap</a>
+        </li>
+        <li>
+          <a href="#">Getting started</a>
+        </li>
+        <li>
+          <a href="#">CSS</a>
+        </li>
+        <li>
+          <a href="#">Components</a>
+        </li>
+        <li>
+          <a href="#">JavaScript</a>
+        </li>
+        <li>
+          <a href="#">Customize</a>
+        </li>
+      </ul>
+      <ul class="right_nav">
+        <li>
+          <a href="#">Themes</a>
+        </li>
+        <li>
+          <a href="#">Expo</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bootstrap_download">
+      <article class="bs_header">
+        <span class="logo">B</span>
+        <p class="bs_description">Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+        <a class="bs_button" href="#">Download Bootstrap</a>
+        <p class="version">Currently v3.3.6</p>
+      </article>
+    </section>
+
+
+    <section id="bootstrap_features">
+      <section class="section_header">
+        <h2 class="section_h2">Designed for everyone, everywhere.</h2>
+        <p class="section_p">Bootstrap makes front-end web development faster and easier. It's made for folks of all skill levels, devices of all shapes, and projects of all sizes.</p>
+      </section>
+
+      <hr class="half_rule">
+
+      <section id="features_articles">
+        <article>
+          <img src="icons8-sass-48.png" alt="Sass & Less">
+          <h3>Preprocessors</h3>
+          <p class="lead">Bootstrap ships with vanilla CSS, but its source code utilizes the two most popular CSS preprocessors, <a href="#">Less</a> and <a href="#">Sass</a>. Quickly get started with precompiled CSS or build on the source.</p>
+        </article>
+        <article>
+          <img src="icons8-device-64.png" alt="Devices">
+          <h3>One framework, every device.</h3>
+          <p class="lead">Bootstrap easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with CSS media queries.</p>
+        </article>
+        <article>
+          <img src="icons8-web-components-48.png" alt="Components">
+          <h3>Full of features</h3>
+          <p class="lead">With Bootstrap, you get extensive and beautiful documentation for common HTML elements, dozens of custom HTML and CSS components, and awesome jQuery plugins.</p>
+        </article>
+      </section>
+
+      <hr class="half_rule">
+
+      <section class="section_footer">
+        <p class="section_p">Bootstrap is open source. It's hosted, developed, and maintained on GitHub.</p>
+        <a href="#" class="bs_button_inverse">View the GitHub project</a>
+      </section>
+    </section>
+
+    <hr>
+
+    <section id="bootstrap_expo">
+      <section class="section_header">
+        <h2 class="section_h2">Built with Bootstrap</h2>
+        <p class="section_p">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="#">collection of examples</a> or by exploring some of our favorites.</p>
+      </section>
+
+      <hr class="half_rule">
+
+      <section id="expo_images">
+        <img class="expo_thumb" src="icons8-lyft-32.png" alt="Lyft">
+        <img class="expo_thumb" src="icons8-magazine-48.png" alt="Vogue">
+        <img class="expo_thumb" src="icons8-medium-icons-48.png" alt="Riot">
+        <img class="expo_thumb" src="icons8-bookmark-48.png" alt="Newsweek">
+      </section>
+
+      <hr class="half_rule">
+
+      <section class="section_footer">
+        <p class="section_p">We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap Expo.</p>
+        <a href="#" class="bs_button_inverse">Explore the Expo</a>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <section class="footer_nav">
+      <ul>
+        <li>
+          <a class="footer_link" href="#">GitHub</a>
+        </li>
+        <li>
+          <a class="footer_link" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class="footer_link" href="#">Examples</a>
+        </li>
+        <li>
+          <a class="footer_link" href="#">About</a>
+        </li>
+      </ul>
+    </section>
+    <p>Designed and built with all the love in the world by <a class="footer_link" href="#">@mdo</a> and <a class="footer_link" href="#">@fat</a>. Maintained by the <a class="footer_link" href="#">core team</a> with the help of <a class="footer_link" href="#">our contributors</a>.</p>
+    <p>Code licensed <a class="footer_link" href="#">MIT</a>, docs
+      <a class="footer_link" href="">CC BY 3.0</a>.</p>
+  </footer>
+
+</body>
+
+</html>
